@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=363101f96899"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,9 @@
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
     "@storybook/react": "^6.3.12",
+    "@types/styled-components": "^5.1.15",
     "babel-loader": "^8.2.3",
-    "@types/styled-components": "^5.1.15"
+    "chromatic": "^6.0.6"
   },
   "dependencies": {
     "react": "^16.14.0",
