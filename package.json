@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic --project-token=363101f96899"
@@ -22,13 +23,23 @@
   "homepage": "https://github.com/elekchen9804/share-ui#readme",
   "devDependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
     "@storybook/react": "^6.3.12",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
     "@types/styled-components": "^5.1.15",
+    "babel-jest": "^27.3.1",
     "babel-loader": "^8.2.3",
-    "chromatic": "^6.0.6"
+    "chromatic": "^6.0.6",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "react-test-renderer": "^17.0.2"
   },
   "dependencies": {
     "react": "^16.14.0",
